@@ -1,19 +1,4 @@
-# Screeps Typescript Starter
-
-Screeps Typescript Starter is a starting point for a Screeps AI written in Typescript. It provides everything you need to start writing your AI whilst leaving `main.ts` as empty as possible.
-
-## Basic Usage
-
-You will need:
-
- - Node.JS (Latest LTS is recommended)
- - A Package Manager (Yarn or NPM)
-
-Download the latest source [here](https://github.com/screepers/screeps-typescript-starter/archive/v3.0.zip) and extract it to a folder.
-
-Open the folder in your terminal and run `npm install` (or `yarn`) to install the dependencies.
-
-Fire up your preferred editor with typescript installed and you are good to go!
+# Korrigan: Screeps Units AI (WIP)
 
 ### Rollup and code upload
 
@@ -29,14 +14,16 @@ Finally, there are also NPM scripts that serve as aliases for these commands in 
 
 #### Important! To upload code to a private server, you must have [screepsmod-auth](https://github.com/ScreepsMods/screepsmod-auth) installed and configured!
 
-## Typings
+## Run
 
-The type definitions for Screeps come from [typed-screeps](https://github.com/screepers/typed-screeps). If you find a problem or have a suggestion, please open an issue there.
+You have to spawn yourself the creeps using the console
+Get room id with 'Game.spawns['Spawn1'].room.name' (Probably "sim" in simulator)
+energySource id with 'Game.spawns['Spawn1'].room.find(FIND_SOURCES)[0]['id']'
 
-## Documentation
+Game.spawns['Spawn1'].spawnCreep( [WORK, WORK, MOVE], 'Harvester1', { memory:{taskType: "HARVEST", taskTargetId: "74698a3a958afb4a87028d0f", taskTargetRoom: "sim", taskStateType: "MOVE", taskStateTargetId: "74698a3a958afb4a87028d0f", taskStateTargetRoom: "sim"}});
 
-We also have a community-maintained [documentation page](https://screepers.gitbooks.io/screeps-typescript-starter/), which includes all the essentials to get you up and running with Screeps AI development in TypeScript, as well as various other tips and tricks to further improve your development workflow.
+... Mmmm Ok
+It doesn't seem to work very well
 
-## Contributing
 
-Issues, Pull Requests, and contribution to the docs are welcome! See our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+Work In Progress

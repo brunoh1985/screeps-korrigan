@@ -26,7 +26,14 @@ export default {
   plugins: [
     clean(),
     resolve(),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        // left-hand side can be an absolute path, a path
+        // relative to the current directory, or the name
+        // of a module in node_modules
+        'node_modules/monet/src/main/javascript/monet.js': [ 'Maybe', 'Either' ]
+      }
+    }),
     typescript({tsconfig: "./tsconfig.json"}),
     screeps({config: cfg, dryRun: cfg == null})
   ]

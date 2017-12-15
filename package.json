@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/brunoh1985/screeps-korrigan#readme",
   "devDependencies": {
+    "@types/jasmine": "^2.8.2",
     "@types/lodash": "^3.10.1",
     "@types/source-map": "^0.5.2",
+    "lodash": "3.10.1",
     "rollup": "^0.51.8",
     "rollup-plugin-clean": "^1.0.0",
     "rollup-plugin-commonjs": "^8.2.6",

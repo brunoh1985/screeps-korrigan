@@ -16,14 +16,11 @@ Finally, there are also NPM scripts that serve as aliases for these commands in 
 
 ## Run
 
-You have to spawn yourself the creeps using the console
-Get room id with 'Game.spawns['Spawn1'].room.name' (Probably "sim" in simulator)
-energySource id with 'Game.spawns['Spawn1'].room.find(FIND_SOURCES)[0]['id']'
+In console, spawn the creeps with a role assignement
 
-Game.spawns['Spawn1'].spawnCreep( [WORK, WORK, MOVE], 'Harvester1', { memory:{taskType: "HARVEST", taskTargetId: "74698a3a958afb4a87028d0f", taskTargetRoom: "sim", taskStateType: "MOVE", taskStateTargetId: "74698a3a958afb4a87028d0f", taskStateTargetRoom: "sim"}});
-
-... Mmmm Ok
-It doesn't seem to work very well
+Game.spawns['Spawn1'].spawnCreep( [WORK, WORK, MOVE], 'Harvester1', { memory:{role:"HARVESTER"}});
+Game.spawns['Spawn1'].spawnCreep( [CARRY, CARRY, MOVE], 'Hauler1', { memory:{role:"HAULER"}});
+Game.spawns['Spawn1'].spawnCreep( [WORK, CARRY, MOVE], 'Upgrader1', { memory:{role:"UPGRADER"}});
 
 
 Work In Progress
